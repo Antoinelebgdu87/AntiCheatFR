@@ -11,8 +11,11 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Apply dark theme by default for gaming aesthetic
-    document.documentElement.classList.add("dark");
+    // Apply light theme by default for macOS aesthetic
+    document.documentElement.classList.remove("dark");
+    // Add macOS system font
+    document.documentElement.style.fontFamily =
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif";
   }, []);
 
   return (

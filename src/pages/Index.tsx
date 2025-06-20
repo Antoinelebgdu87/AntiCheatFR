@@ -1,12 +1,12 @@
 import { Navigation } from "@/components/sections/Navigation";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
-import { PricingSection } from "@/components/sections/PricingSection";
+import { PricingSectionMac } from "@/components/sections/PricingSectionMac";
 import { Footer } from "@/components/sections/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gaming-dark text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Navigation */}
       <Navigation />
 
@@ -19,7 +19,7 @@ const Index = () => {
         <FeaturesSection />
 
         {/* Pricing Section */}
-        <PricingSection />
+        <PricingSectionMac />
 
         {/* Order Section */}
         <section id="order" className="py-16 relative bg-gaming-surface/20">

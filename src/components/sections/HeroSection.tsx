@@ -72,30 +72,43 @@ export const HeroSection = () => {
         </div>
 
         {/* Feature highlights */}
-        <div className="animate-fade-in grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="bg-gaming-surface/30 backdrop-blur-sm border border-gaming-surface rounded-lg p-6 hover:border-neon-blue/50 transition-colors group">
-            <Shield className="h-10 w-10 text-neon-blue mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-semibold mb-2">Advanced Detection</h3>
-            <p className="text-sm text-muted-foreground">
-              AI-powered pattern recognition detects even the most sophisticated
-              exploits
+        <div className="animate-mac-fade grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="bg-macos-surface/50 backdrop-blur-xl border border-border/30 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-12 h-12 bg-macos-blue/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
+              <Shield className="h-6 w-6 text-macos-blue group-hover:scale-110 transition-transform" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2 text-center">
+              Détection Avancée
+            </h3>
+            <p className="text-sm text-muted-foreground text-center">
+              Reconnaissance de patterns IA qui détecte même les exploits les
+              plus sophistiqués
             </p>
           </div>
 
-          <div className="bg-gaming-surface/30 backdrop-blur-sm border border-gaming-surface rounded-lg p-6 hover:border-neon-cyan/50 transition-colors group">
-            <Zap className="h-10 w-10 text-neon-cyan mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-semibold mb-2">Lightning Fast</h3>
-            <p className="text-sm text-muted-foreground">
-              Zero impact on game performance with sub-millisecond response
-              times
+          <div className="bg-macos-surface/50 backdrop-blur-xl border border-border/30 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
+              <Zap className="h-6 w-6 text-green-600 group-hover:scale-110 transition-transform" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2 text-center">
+              Ultra Rapide
+            </h3>
+            <p className="text-sm text-muted-foreground text-center">
+              Aucun impact sur les performances avec des temps de réponse
+              sub-millisecondes
             </p>
           </div>
 
-          <div className="bg-gaming-surface/30 backdrop-blur-sm border border-gaming-surface rounded-lg p-6 hover:border-neon-purple/50 transition-colors group">
-            <Eye className="h-10 w-10 text-neon-purple mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-semibold mb-2">Real-time Monitoring</h3>
-            <p className="text-sm text-muted-foreground">
-              Live dashboard with detailed analytics and threat intelligence
+          <div className="bg-macos-surface/50 backdrop-blur-xl border border-border/30 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+            <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
+              <Eye className="h-6 w-6 text-purple-600 group-hover:scale-110 transition-transform" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2 text-center">
+              Monitoring Temps Réel
+            </h3>
+            <p className="text-sm text-muted-foreground text-center">
+              Dashboard en direct avec analyses détaillées et intelligence des
+              menaces
             </p>
           </div>
         </div>
