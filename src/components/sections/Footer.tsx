@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Github, Twitter, Discord, Mail } from "lucide-react";
+import { Shield, Github, Twitter, MessageCircle, Mail } from "lucide-react";
 
 export const Footer = () => {
   const links = {
@@ -25,7 +25,7 @@ export const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "#github", label: "GitHub" },
-    { icon: Discord, href: "#discord", label: "Discord" },
+    { icon: MessageCircle, href: "#discord", label: "Discord" },
     { icon: Twitter, href: "#twitter", label: "Twitter" },
     { icon: Mail, href: "#email", label: "Email" },
   ];
