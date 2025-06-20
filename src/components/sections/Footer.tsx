@@ -7,7 +7,6 @@ export const Footer = () => {
       { label: "Fonctionnalités", href: "#features" },
       { label: "Tarifs", href: "#pricing" },
       { label: "Documentation", href: "#docs" },
-      { label: "Référence API", href: "#api" },
     ],
     support: [
       { label: "Centre d'aide", href: "#help" },
@@ -49,18 +48,6 @@ export const Footer = () => {
               Protégez vos expériences avec une technologie de pointe et une
               détection de menaces en temps réel.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="text-muted-foreground hover:text-neon-blue transition-colors p-2 rounded-lg hover:bg-gaming-surface/50"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Links sections */}
@@ -119,40 +106,14 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter signup */}
-        <div className="bg-gaming-surface/30 rounded-lg p-6 mb-8">
-          <div className="md:flex md:items-center md:justify-between">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                Restez Informé
-              </h3>
-              <p className="text-muted-foreground">
-                Recevez les dernières mises à jour sur les fonctionnalités et
-                menaces de sécurité.
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Votre email"
-                className="px-4 py-2 bg-gaming-dark border border-gaming-surface rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-neon-blue focus:border-transparent"
-              />
-              <Button className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-gaming-dark font-semibold">
-                S'abonner
-              </Button>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom bar */}
         <div className="pt-8 border-t border-gaming-surface">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-sm text-muted-foreground">
-              © 2024 RoShield Pro. Tous droits réservés.
+              © 2025 RoShield Pro. Tous droits réservés.
             </div>
             <div className="mt-4 md:mt-0">
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                <span>Conçu avec ❤️ pour la communauté Roblox</span>
                 <span className="inline-flex items-center space-x-1">
                   <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                   <span>Tous les systèmes opérationnels</span>

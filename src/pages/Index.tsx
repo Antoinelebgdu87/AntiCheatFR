@@ -33,7 +33,6 @@ const Index = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="bg-gaming-surface/30 border border-gaming-surface rounded-lg p-6">
-                <div className="text-4xl mb-4">1️⃣</div>
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Choisissez votre Plan
                 </h3>
@@ -42,7 +41,6 @@ const Index = () => {
                 </p>
               </div>
               <div className="bg-gaming-surface/30 border border-gaming-surface rounded-lg p-6">
-                <div className="text-4xl mb-4">2️⃣</div>
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Remplissez le Formulaire
                 </h3>
@@ -51,7 +49,6 @@ const Index = () => {
                 </p>
               </div>
               <div className="bg-gaming-surface/30 border border-gaming-surface rounded-lg p-6">
-                <div className="text-4xl mb-4">3️⃣</div>
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Recevez votre Anti-Cheat
                 </h3>

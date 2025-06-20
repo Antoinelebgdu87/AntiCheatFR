@@ -247,14 +247,9 @@ export const PricingSection = () => {
           </div>
 
           {/* Additional info */}
-          <div className="text-center mt-12">
-            <p className="text-gray-400 mb-4">
-              💡 Tous les plans incluent 7 jours d'essai gratuit
-            </p>
-            <p className="text-sm text-gray-500">
-              Paiement sécurisé en Robux • Support francophone • Satisfaction
-              garantie
-            </p>
+          <div className="text-center mt-12 text-sm text-gray-500">
+            Paiement sécurisé en Robux • Support francophone • Satisfaction
+            garantie
           </div>
         </div>
       </section>

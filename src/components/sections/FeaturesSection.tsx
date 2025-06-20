@@ -110,12 +110,6 @@ export const FeaturesSection = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <Badge
-            variant="outline"
-            className="border-neon-blue text-neon-blue bg-gaming-surface/80 mb-4"
-          >
-            ⚡ Fonctionnalités
-          </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent">
               Protection Avancée
