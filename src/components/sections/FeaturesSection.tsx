@@ -76,26 +76,26 @@ export const FeaturesSection = () => {
   const stats = [
     {
       icon: CheckCircle,
-      label: "Threats Blocked",
-      value: "2.5M+",
+      label: "Menaces Bloquées",
+      value: "50K+",
       color: "text-green-400",
     },
     {
       icon: Clock,
-      label: "Avg Response Time",
-      value: "<500μs",
+      label: "Temps de Réponse",
+      value: "<1ms",
       color: "text-neon-cyan",
     },
     {
       icon: BarChart3,
-      label: "Uptime",
-      value: "99.99%",
+      label: "Disponibilité",
+      value: "99.9%",
       color: "text-neon-blue",
     },
     {
       icon: AlertTriangle,
-      label: "False Positives",
-      value: "<0.01%",
+      label: "Faux Positifs",
+      value: "0%",
       color: "text-neon-purple",
     },
   ];
@@ -173,46 +173,26 @@ export const FeaturesSection = () => {
           ))}
         </div>
 
-        {/* Code example */}
-        <div className="mt-20">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">
-              Get Started in
-              <span className="text-neon-blue"> 2 Minutes</span>
+        {/* Call to action */}
+        <div className="mt-16 text-center">
+          <div className="bg-gaming-surface/30 border border-gaming-surface rounded-lg p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-white">
+              Prêt à Protéger votre Jeu ?
             </h3>
-            <p className="text-muted-foreground">
-              Simple integration with your existing Roblox scripts
+            <p className="text-gray-400 mb-6">
+              Installation ultra-simple en moins de 2 minutes
             </p>
-          </div>
-
-          <div className="bg-gaming-darker border border-gaming-surface rounded-lg p-6 max-w-4xl mx-auto">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
-              <span className="text-sm text-muted-foreground ml-4">
-                ServerScript.lua
-              </span>
-            </div>
-            <pre className="text-sm overflow-x-auto">
-              <code className="text-neon-cyan">
-                {`-- Initialize RobloxShield Anti-Cheat
-local RobloxShield = require(game.ReplicatedStorage.RobloxShield)
-
--- Configure protection settings
-RobloxShield.init({
-    enabled = true,
-    detection_level = "high",
-    auto_ban = true,
-    webhook_url = "your-discord-webhook"
-})
-
--- That's it! Your game is now protected
-print("🛡️ RobloxShield activated - Game protected!")`}
-              </code>
-            </pre>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-black font-semibold px-8 py-3"
+              onClick={() =>
+                document
+                  .getElementById("pricing")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Voir les Tarifs
+            </Button>
           </div>
         </div>
       </div>
