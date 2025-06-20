@@ -4,50 +4,48 @@ import { Play, Download, Github, Shield, Zap, Eye } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gaming-dark to-gaming-surface">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-macos-gray pt-20">
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main heading */}
-        <div className="animate-slide-up mb-6">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-purple bg-clip-text text-transparent">
-              RobloxShield
+        <div className="animate-mac-slide mb-8">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 -apple-system tracking-tight">
+            <span className="bg-gradient-to-r from-macos-blue to-blue-600 bg-clip-text text-transparent">
+              RoShield
             </span>
             <br />
-            <span className="text-white">Protection Ultime</span>
+            <span className="text-foreground">Protection Ultime</span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Protégez vos jeux Roblox avec notre système anti-cheat avancé.
             <br />
-            <span className="text-neon-cyan font-semibold">
+            <span className="text-macos-blue font-semibold">
               Détection instantanée • Performance maximale
             </span>
           </p>
         </div>
 
         {/* Stats row */}
-        <div className="animate-fade-in grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-neon-blue mb-2">99.9%</div>
-            <div className="text-sm text-gray-400">Détection</div>
+        <div className="animate-mac-fade grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
+          <div className="text-center p-4 bg-macos-surface/50 backdrop-blur-xl rounded-2xl border border-border/30">
+            <div className="text-3xl font-bold text-macos-blue mb-2">99.9%</div>
+            <div className="text-sm text-muted-foreground">Détection</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-neon-cyan mb-2">0ms</div>
-            <div className="text-sm text-gray-400">Latence</div>
+          <div className="text-center p-4 bg-macos-surface/50 backdrop-blur-xl rounded-2xl border border-border/30">
+            <div className="text-3xl font-bold text-macos-blue mb-2">0ms</div>
+            <div className="text-sm text-muted-foreground">Latence</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-neon-purple mb-2">
-              1000+
-            </div>
-            <div className="text-sm text-gray-400">Jeux Protégés</div>
+          <div className="text-center p-4 bg-macos-surface/50 backdrop-blur-xl rounded-2xl border border-border/30">
+            <div className="text-3xl font-bold text-macos-blue mb-2">1000+</div>
+            <div className="text-sm text-muted-foreground">Jeux Protégés</div>
           </div>
         </div>
 
         {/* Action buttons */}
-        <div className="animate-slide-up flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="animate-mac-scale flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-black font-semibold px-8 py-6 text-lg group"
+            className="bg-macos-blue hover:bg-blue-600 text-white font-semibold px-8 py-4 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 group"
             onClick={() =>
               document
                 .getElementById("pricing")
@@ -61,7 +59,7 @@ export const HeroSection = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black px-8 py-6 text-lg group"
+            className="border-border/50 text-foreground hover:bg-macos-gray/50 px-8 py-4 text-base rounded-xl transition-all duration-200 group backdrop-blur-xl"
             onClick={() =>
               document
                 .getElementById("order")

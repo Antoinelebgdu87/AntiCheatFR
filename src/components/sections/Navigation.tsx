@@ -13,47 +13,42 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gaming-dark/80 backdrop-blur-md border-b border-gaming-surface">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed top-4 left-4 right-4 z-50 bg-background/80 backdrop-blur-xl rounded-2xl border border-border/50 shadow-lg">
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="relative">
-              <Shield className="h-8 w-8 text-neon-blue animate-pulse" />
-              <div className="absolute inset-0 h-8 w-8 text-neon-cyan animate-ping opacity-20">
-                <Shield className="h-8 w-8" />
-              </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-br from-macos-blue to-blue-600 rounded-lg flex items-center justify-center shadow-sm">
+              <Shield className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-foreground">
+            <span className="text-lg font-semibold text-foreground -apple-system">
               RoShield
-              <span className="text-neon-blue ml-1">Pro</span>
+              <span className="text-macos-blue ml-1">Pro</span>
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-neon-blue transition-colors duration-200 relative group"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/50 rounded-lg transition-all duration-200"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-blue transition-all duration-200 group-hover:w-full"></span>
               </a>
             ))}
           </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-neon-blue transition-colors"
+              className="p-2 text-foreground hover:bg-macos-gray/50 rounded-lg transition-colors"
             >
               {isOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-5 w-5" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-5 w-5" />
               )}
             </button>
           </div>
@@ -61,13 +56,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-gaming-surface/90 backdrop-blur-md border-t border-gaming-surface">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="md:hidden border-t border-border/50 mt-2">
+            <div className="px-4 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block px-3 py-2 text-muted-foreground hover:text-neon-blue transition-colors"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/50 rounded-lg transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
