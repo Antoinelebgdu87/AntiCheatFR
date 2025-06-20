@@ -6,16 +6,6 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gaming-dark to-gaming-surface">
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Status badge */}
-        <div className="animate-fade-in mb-8">
-          <Badge
-            variant="outline"
-            className="border-neon-blue text-neon-blue bg-gaming-surface/80 px-4 py-2 text-sm font-medium"
-          >
-            🛡️ Anti-Cheat Roblox Professionnel
-          </Badge>
-        </div>
-
         {/* Main heading */}
         <div className="animate-slide-up mb-6">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">

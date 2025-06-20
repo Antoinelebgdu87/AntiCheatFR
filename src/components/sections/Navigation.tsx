@@ -25,7 +25,7 @@ export const Navigation = () => {
               </div>
             </div>
             <span className="text-xl font-bold text-foreground">
-              RobloxShield
+              RoShield
               <span className="text-neon-blue ml-1">Pro</span>
             </span>
           </div>
