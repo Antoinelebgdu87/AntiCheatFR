@@ -8,46 +8,46 @@
    * tailwind.config.ts expects the following color variables to be expressed as HSL values.
   */
   :root {
-    /* Gaming Dark Theme - Default */
-    --background: 220 15% 8%;
-    --foreground: 210 40% 98%;
+    /* macOS Theme - Light/Dark adaptive */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
 
-    --card: 220 15% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
 
-    --popover: 220 15% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 193 100% 50%;
-    --primary-foreground: 220 15% 8%;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 193 100% 50%;
-    --accent-foreground: 220 15% 8%;
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 15%;
-    --ring: 193 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 211 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Gaming specific colors */
-    --neon-blue: 193 100% 50%;
-    --neon-cyan: 180 100% 50%;
-    --neon-purple: 270 100% 70%;
-    --neon-pink: 320 100% 70%;
+    /* macOS specific colors */
+    --macos-blue: 211 100% 50%;
+    --macos-gray: 0 0% 96%;
+    --macos-surface: 0 0% 98%;
+    --macos-overlay: 0 0% 100%;
 
-    --gaming-dark: 220 15% 8%;
-    --gaming-darker: 220 20% 5%;
-    --gaming-surface: 220 15% 12%;
+    --gaming-dark: 0 0% 96%;
+    --gaming-darker: 0 0% 98%;
+    --gaming-surface: 0 0% 94%;
 
     /* Sidebar */
     --sidebar-background: 220 15% 10%;
@@ -60,29 +60,43 @@
     --sidebar-ring: 193 100% 50%;
   }
 
-  .light {
-    /* Light theme overrides if needed */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 193 100% 40%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 193 100% 40%;
-    --accent-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 193 100% 40%;
+  .dark {
+    /* macOS Dark Mode */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --gaming-dark: 210 40% 96.1%;
-    --gaming-darker: 0 0% 100%;
-    --gaming-surface: 210 40% 98%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 64%;
+
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 13%;
+    --ring: 211 100% 50%;
+
+    --macos-gray: 0 0% 11%;
+    --macos-surface: 0 0% 9%;
+    --macos-overlay: 0 0% 13%;
+
+    --gaming-dark: 0 0% 7%;
+    --gaming-darker: 0 0% 5%;
+    --gaming-surface: 0 0% 11%;
   }
 }
 

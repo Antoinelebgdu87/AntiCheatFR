@@ -62,12 +62,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Gaming theme colors
-        neon: {
-          blue: "hsl(var(--neon-blue))",
-          cyan: "hsl(var(--neon-cyan))",
-          purple: "hsl(var(--neon-purple))",
-          pink: "hsl(var(--neon-pink))",
+        // macOS theme colors
+        macos: {
+          blue: "hsl(var(--macos-blue))",
+          gray: "hsl(var(--macos-gray))",
+          surface: "hsl(var(--macos-surface))",
+          overlay: "hsl(var(--macos-overlay))",
         },
         gaming: {
           dark: "hsl(var(--gaming-dark))",
@@ -97,35 +97,30 @@ export default {
             height: "0",
           },
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
-          "50%": { transform: "translateY(-20px) rotate(180deg)" },
+        "mac-bounce": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
         },
-        glow: {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(var(--neon-blue))" },
-          "50%": { boxShadow: "0 0 40px hsl(var(--neon-cyan))" },
-        },
-        pulse: {
-          "0%, 100%": { opacity: 1 },
-          "50%": { opacity: 0.5 },
-        },
-        "slide-up": {
-          "0%": { opacity: 0, transform: "translateY(100px)" },
+        "mac-slide": {
+          "0%": { opacity: 0, transform: "translateY(10px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
-        "fade-in": {
+        "mac-fade": {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
+        },
+        "mac-scale": {
+          "0%": { opacity: 0, transform: "scale(0.95)" },
+          "100%": { opacity: 1, transform: "scale(1)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 6s ease-in-out infinite",
-        glow: "glow 2s ease-in-out infinite",
-        "pulse-slow": "pulse 3s ease-in-out infinite",
-        "slide-up": "slide-up 0.8s ease-out",
-        "fade-in": "fade-in 0.6s ease-out",
+        "mac-bounce": "mac-bounce 0.6s ease-out",
+        "mac-slide": "mac-slide 0.4s ease-out",
+        "mac-fade": "mac-fade 0.3s ease-out",
+        "mac-scale": "mac-scale 0.3s ease-out",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
