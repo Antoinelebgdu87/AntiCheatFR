@@ -177,7 +177,8 @@ export const FeaturesSection = () => {
               Prêt à Protéger votre Jeu ?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Installation ultra-simple en moins de 2 minutes
+              Installation ultra-simple en moins de 2 minutes :D
+              <br />
             </p>
             <Button
               size="lg"
