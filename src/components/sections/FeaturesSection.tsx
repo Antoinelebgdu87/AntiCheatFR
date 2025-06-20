@@ -25,49 +25,49 @@ export const FeaturesSection = () => {
   const features = [
     {
       icon: Shield,
-      title: "Multi-Layer Protection",
+      title: "Protection Multi-Couches",
       description:
-        "Advanced heuristic analysis combined with signature-based detection for comprehensive security.",
+        "Système de détection avancé combinant analyse heuristique et signatures pour une sécurité maximale.",
       color: "text-neon-blue",
       gradient: "from-neon-blue/20 to-transparent",
     },
     {
       icon: Zap,
-      title: "Zero Performance Impact",
+      title: "Performance Optimale",
       description:
-        "Optimized algorithms ensure your game runs at full speed while staying protected.",
+        "Algorithmes optimisés qui n'impactent pas les performances de votre jeu Roblox.",
       color: "text-neon-cyan",
       gradient: "from-neon-cyan/20 to-transparent",
     },
     {
       icon: Eye,
-      title: "Real-Time Monitoring",
+      title: "Surveillance Temps Réel",
       description:
-        "Live threat detection with instant alerts and automatic response mechanisms.",
+        "Détection instantanée des menaces avec alertes automatiques et réponse immédiate.",
       color: "text-neon-purple",
       gradient: "from-neon-purple/20 to-transparent",
     },
     {
       icon: Code,
-      title: "Easy Integration",
+      title: "Intégration Simple",
       description:
-        "Simple API with comprehensive documentation. Get protected in minutes, not hours.",
+        "Installation facile en quelques minutes avec notre script prêt à l'emploi.",
       color: "text-neon-pink",
       gradient: "from-neon-pink/20 to-transparent",
     },
     {
       icon: Activity,
-      title: "Advanced Analytics",
+      title: "Statistiques Détaillées",
       description:
-        "Detailed insights into attack patterns, user behavior, and security metrics.",
+        "Dashboard complet avec analyses des tentatives d'attaque et métriques de sécurité.",
       color: "text-green-400",
       gradient: "from-green-400/20 to-transparent",
     },
     {
       icon: Lock,
-      title: "Encrypted Communication",
+      title: "Communication Sécurisée",
       description:
-        "All data transmission secured with military-grade encryption protocols.",
+        "Toutes les données sont protégées par un chiffrement de niveau militaire.",
       color: "text-orange-400",
       gradient: "from-orange-400/20 to-transparent",
     },
@@ -111,19 +111,18 @@ export const FeaturesSection = () => {
         <div className="text-center mb-16">
           <Badge
             variant="outline"
-            className="border-neon-blue text-neon-blue bg-gaming-surface/50 backdrop-blur-sm mb-4"
+            className="border-neon-blue text-neon-blue bg-gaming-surface/80 mb-4"
           >
-            Features
+            ⚡ Fonctionnalités
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent">
-              Advanced Protection
+              Protection Avancée
             </span>
-            <span className="text-foreground"> Features</span>
+            <span className="text-white"> pour Roblox</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive anti-cheat solution designed specifically for modern
-            Roblox experiences
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Solution anti-cheat complète et performante pour vos jeux Roblox
           </p>
         </div>
 
