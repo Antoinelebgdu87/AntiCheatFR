@@ -7,8 +7,8 @@ export const Navigation = () => {
 
   const navItems = [
     { label: "Features", href: "#features" },
-    { label: "Performance", href: "#performance" },
-    { label: "Documentation", href: "#docs" },
+    { label: "Tarifs", href: "#pricing" },
+    { label: "Commander", href: "#order" },
     { label: "Support", href: "#support" },
   ];
 
