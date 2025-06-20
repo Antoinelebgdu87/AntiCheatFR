@@ -113,10 +113,10 @@ export const FeaturesSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
               Protection Avancée
             </span>
-            <span className="text-white"> pour Roblox</span>
+            <span className="text-foreground"> pour Roblox</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Solution anti-cheat complète et performante pour vos jeux Roblox
