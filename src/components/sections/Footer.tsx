@@ -4,22 +4,22 @@ import { Shield, Github, Twitter, MessageCircle, Mail } from "lucide-react";
 export const Footer = () => {
   const links = {
     product: [
-      { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "Fonctionnalités", href: "#features" },
+      { label: "Tarifs", href: "#pricing" },
       { label: "Documentation", href: "#docs" },
-      { label: "API Reference", href: "#api" },
+      { label: "Référence API", href: "#api" },
     ],
     support: [
-      { label: "Help Center", href: "#help" },
-      { label: "Community", href: "#community" },
-      { label: "Contact Us", href: "#contact" },
-      { label: "Bug Reports", href: "#bugs" },
+      { label: "Centre d'aide", href: "#help" },
+      { label: "Communauté", href: "#community" },
+      { label: "Nous contacter", href: "#contact" },
+      { label: "Signaler un bug", href: "#bugs" },
     ],
     legal: [
-      { label: "Privacy Policy", href: "#privacy" },
-      { label: "Terms of Service", href: "#terms" },
-      { label: "License", href: "#license" },
-      { label: "Security", href: "#security" },
+      { label: "Politique de confidentialité", href: "#privacy" },
+      { label: "Conditions d'utilisation", href: "#terms" },
+      { label: "Licence", href: "#license" },
+      { label: "Sécurité", href: "#security" },
     ],
   };
 
@@ -40,14 +40,14 @@ export const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-neon-blue" />
               <span className="text-xl font-bold text-foreground">
-                RobloxShield
+                RoShield
                 <span className="text-neon-blue ml-1">Pro</span>
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              The most advanced anti-cheat solution for Roblox games. Protect
-              your experiences with cutting-edge technology and real-time threat
-              detection.
+              La solution anti-cheat la plus avancée pour les jeux Roblox.
+              Protégez vos expériences avec une technologie de pointe et une
+              détection de menaces en temps réel.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -66,7 +66,7 @@ export const Footer = () => {
           {/* Links sections */}
           <div>
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-              Product
+              Produit
             </h3>
             <ul className="space-y-3">
               {links.product.map((link) => (
@@ -102,7 +102,7 @@ export const Footer = () => {
 
           <div>
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-              Legal
+              Légal
             </h3>
             <ul className="space-y-3">
               {links.legal.map((link) => (
@@ -124,20 +124,21 @@ export const Footer = () => {
           <div className="md:flex md:items-center md:justify-between">
             <div className="mb-4 md:mb-0">
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Stay Updated
+                Restez Informé
               </h3>
               <p className="text-muted-foreground">
-                Get the latest updates about new features and security threats.
+                Recevez les dernières mises à jour sur les fonctionnalités et
+                menaces de sécurité.
               </p>
             </div>
             <div className="flex gap-2">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Votre email"
                 className="px-4 py-2 bg-gaming-dark border border-gaming-surface rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-neon-blue focus:border-transparent"
               />
               <Button className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-gaming-dark font-semibold">
-                Subscribe
+                S'abonner
               </Button>
             </div>
           </div>
@@ -147,14 +148,14 @@ export const Footer = () => {
         <div className="pt-8 border-t border-gaming-surface">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-sm text-muted-foreground">
-              © 2024 RobloxShield Pro. All rights reserved.
+              © 2024 RoShield Pro. Tous droits réservés.
             </div>
             <div className="mt-4 md:mt-0">
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                <span>Built with ❤️ for the Roblox community</span>
+                <span>Conçu avec ❤️ pour la communauté Roblox</span>
                 <span className="inline-flex items-center space-x-1">
                   <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                  <span>All systems operational</span>
+                  <span>Tous les systèmes opérationnels</span>
                 </span>
               </div>
             </div>

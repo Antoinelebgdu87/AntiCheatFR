@@ -6,7 +6,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "#features" },
+    { label: "Fonctionnalités", href: "#features" },
     { label: "Tarifs", href: "#pricing" },
     { label: "Commander", href: "#order" },
     { label: "Support", href: "#support" },
@@ -42,9 +42,6 @@ export const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-blue transition-all duration-200 group-hover:w-full"></span>
               </a>
             ))}
-            <Button className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-gaming-dark font-semibold px-6">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -76,11 +73,6 @@ export const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-gaming-dark font-semibold">
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}
