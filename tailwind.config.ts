@@ -97,30 +97,25 @@ export default {
             height: "0",
           },
         },
-        "mac-bounce": {
-          "0%, 100%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.05)" },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
-        "mac-slide": {
-          "0%": { opacity: 0, transform: "translateY(10px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
-        "mac-fade": {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-        "mac-scale": {
-          "0%": { opacity: 0, transform: "scale(0.95)" },
-          "100%": { opacity: 1, transform: "scale(1)" },
+        scaleIn: {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "mac-bounce": "mac-bounce 0.6s ease-out",
-        "mac-slide": "mac-slide 0.4s ease-out",
-        "mac-fade": "mac-fade 0.3s ease-out",
-        "mac-scale": "mac-scale 0.3s ease-out",
+        fadeIn: "fadeIn 0.3s ease-out",
+        slideUp: "slideUp 0.4s ease-out",
+        scaleIn: "scaleIn 0.3s ease-out",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -12,7 +12,20 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Check, Crown, Shield, Zap, Star } from "lucide-react";
-import { toast } from "sonner";
+
+// Safer toast implementation for SSR compatibility
+const toast = {
+  success: (message: string) => {
+    if (typeof window !== "undefined") {
+      console.log("✓", message);
+    }
+  },
+  error: (message: string) => {
+    if (typeof window !== "undefined") {
+      console.error("✗", message);
+    }
+  },
+};
 
 export const PricingSectionMac = () => {
   const [isOrderDialogOpen, setIsOrderDialogOpen] = useState(false);
@@ -128,6 +141,7 @@ export const PricingSectionMac = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(webhookData),
+          mode: "cors",
         },
       );
 
@@ -139,6 +153,7 @@ export const PricingSectionMac = () => {
         toast.error("Erreur lors de l'envoi. Réessayez plus tard.");
       }
     } catch (error) {
+      console.error("Erreur:", error);
       toast.error("Erreur de connexion. Vérifiez votre réseau.");
     }
   };
