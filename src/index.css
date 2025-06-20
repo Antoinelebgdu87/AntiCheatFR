@@ -61,24 +61,24 @@
   }
 
   .dark {
-    /* macOS Dark Mode */
-    --background: 0 0% 7%;
-    --foreground: 0 0% 95%;
+    /* macOS Dark Mode - Authentic Black */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 9%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 96%;
 
     --primary: 211 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 13%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 0 0% 13%;
-    --muted-foreground: 0 0% 64%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
 
     --accent: 211 100% 50%;
     --accent-foreground: 0 0% 100%;
@@ -86,17 +86,18 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 13%;
+    --border: 0 0% 18%;
+    --input: 0 0% 12%;
     --ring: 211 100% 50%;
 
-    --macos-gray: 0 0% 11%;
-    --macos-surface: 0 0% 9%;
-    --macos-overlay: 0 0% 13%;
+    --macos-blue: 211 100% 50%;
+    --macos-gray: 0 0% 12%;
+    --macos-surface: 0 0% 8%;
+    --macos-overlay: 0 0% 15%;
 
-    --gaming-dark: 0 0% 7%;
-    --gaming-darker: 0 0% 5%;
-    --gaming-surface: 0 0% 11%;
+    --gaming-dark: 0 0% 6%;
+    --gaming-darker: 0 0% 4%;
+    --gaming-surface: 0 0% 12%;
   }
 }
 

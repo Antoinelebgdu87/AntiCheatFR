@@ -4,7 +4,7 @@ import { Play, Download, Github, Shield, Zap, Eye } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-macos-gray pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-gaming-dark to-macos-gray pt-20">
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main heading */}
         <div className="animate-mac-slide mb-8">
@@ -59,7 +59,7 @@ export const HeroSection = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-border/50 text-foreground hover:bg-macos-gray/50 px-8 py-4 text-base rounded-xl transition-all duration-200 group backdrop-blur-xl"
+            className="border-border/60 text-foreground hover:bg-macos-gray/80 px-8 py-4 text-base rounded-xl transition-all duration-200 group backdrop-blur-xl"
             onClick={() =>
               document
                 .getElementById("order")

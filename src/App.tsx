@@ -11,8 +11,8 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Apply light theme by default for macOS aesthetic
-    document.documentElement.classList.remove("dark");
+    // Apply dark theme by default for macOS black aesthetic
+    document.documentElement.classList.add("dark");
     // Add macOS system font
     document.documentElement.style.fontFamily =
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif";

@@ -13,7 +13,7 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-4 left-4 right-4 z-50 bg-background/80 backdrop-blur-xl rounded-2xl border border-border/50 shadow-lg">
+    <nav className="fixed top-4 left-4 right-4 z-50 bg-background/90 backdrop-blur-xl rounded-2xl border border-border/30 shadow-2xl">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
@@ -33,7 +33,7 @@ export const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/50 rounded-lg transition-all duration-200"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/70 rounded-lg transition-all duration-200"
               >
                 {item.label}
               </a>
@@ -43,7 +43,7 @@ export const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-foreground hover:bg-macos-gray/50 rounded-lg transition-colors"
+              className="p-2 text-foreground hover:bg-macos-gray/70 rounded-lg transition-colors"
             >
               {isOpen ? (
                 <X className="h-5 w-5" />
@@ -62,7 +62,7 @@ export const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/50 rounded-lg transition-colors"
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-macos-gray/70 rounded-lg transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

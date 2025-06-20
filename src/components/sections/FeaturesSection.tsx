@@ -102,10 +102,12 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-24 relative overflow-hidden">
+    <section
+      id="features"
+      className="py-24 relative overflow-hidden bg-gradient-to-b from-gaming-dark via-gaming-surface/20 to-gaming-dark"
+    >
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gaming-dark via-gaming-surface/30 to-gaming-dark"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neon-blue/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-macos-blue/5 rounded-full blur-3xl"></div>
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -126,7 +128,7 @@ export const FeaturesSection = () => {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="bg-gaming-surface/30 backdrop-blur-sm border border-gaming-surface rounded-lg p-6 text-center hover:border-neon-blue/50 transition-all duration-300 hover:scale-105"
+              className="bg-macos-surface/50 backdrop-blur-xl border border-border/30 rounded-2xl p-6 text-center hover:border-macos-blue/50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <stat.icon className={`h-8 w-8 mx-auto mb-3 ${stat.color}`} />
               <div className={`text-2xl font-bold mb-1 ${stat.color}`}>
@@ -142,7 +144,7 @@ export const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card
               key={feature.title}
-              className="bg-gaming-surface/30 backdrop-blur-sm border-gaming-surface hover:border-neon-blue/50 transition-all duration-300 hover:scale-105 group overflow-hidden"
+              className="bg-macos-surface/50 backdrop-blur-xl border-border/30 hover:border-macos-blue/50 transition-all duration-300 hover:scale-105 hover:shadow-xl group overflow-hidden rounded-2xl"
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
@@ -150,7 +152,7 @@ export const FeaturesSection = () => {
               <CardHeader className="relative">
                 <div className="flex items-center gap-3 mb-3">
                   <div
-                    className={`p-2 rounded-lg bg-gaming-dark/50 ${feature.color} group-hover:scale-110 transition-transform duration-300`}
+                    className={`p-3 rounded-xl bg-macos-overlay/50 ${feature.color} group-hover:scale-110 transition-transform duration-300`}
                   >
                     <feature.icon className="h-6 w-6" />
                   </div>
@@ -170,16 +172,16 @@ export const FeaturesSection = () => {
 
         {/* Call to action */}
         <div className="mt-16 text-center">
-          <div className="bg-gaming-surface/30 border border-gaming-surface rounded-lg p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-white">
+          <div className="bg-macos-surface/50 backdrop-blur-xl border border-border/30 rounded-2xl p-8 max-w-2xl mx-auto shadow-xl">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">
               Prêt à Protéger votre Jeu ?
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-muted-foreground mb-6">
               Installation ultra-simple en moins de 2 minutes
             </p>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-black font-semibold px-8 py-3"
+              className="bg-macos-blue hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg"
               onClick={() =>
                 document
                   .getElementById("pricing")
